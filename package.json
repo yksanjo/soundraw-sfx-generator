@@ -1,0 +1,34 @@
+{
+  "name": "soundraw-sfx-generator",
+  "version": "1.0.0",
+  "description": "MCP server for generating game sound effects using DeepSeek and Soundraw API",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test:apis": "tsx scripts/test-apis.ts"
+  },
+  "keywords": [
+    "mcp",
+    "soundraw",
+    "sfx",
+    "sound-effects",
+    "game-audio",
+    "deepseek"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "openai": "^4.28.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
